@@ -45,12 +45,12 @@ The server should now be running at http://localhost:5000/.
 **Description**: Fetch details for a specific zip code, including city, state, latitude, and longitude.
 
 **Example**:
-    ```sh
+   ```sh
     GET http://localhost:5000/api/zipcode/90210
-    ```
+   ```
 
 **Response**:
-    ```json
+   ```json
     {
     "zip": 90210,
     "city": "Beverly Hills",
@@ -58,7 +58,7 @@ The server should now be running at http://localhost:5000/.
     "latitude": 34.09,
     "longitude": -118.41
     }
-    ```
+   ```
 
 #### 2. Get All Zip Codes for a Specific State
 
@@ -74,11 +74,11 @@ The server should now be running at http://localhost:5000/.
 - offset (optional): Number of records to skip (useful for pagination).
 
 **Example**:
-    ```sh
+   ```sh
     GET http://localhost:5000/api/state/CA?limit=20&offset=0
-    ```
+   ```
 **Response**:
-    ```json
+   ```json
     {
     "count": 20,
     "rows": [
@@ -92,7 +92,7 @@ The server should now be running at http://localhost:5000/.
         ...
     ]
     }
-    ```
+   ```
 #### 3. Get All Zip Codes for a Specific City
 
 **Endpoint**: `/api/city/:city`
@@ -107,12 +107,12 @@ Parameters:
 - offset (optional): Number of records to skip.
 
 **Example**:
-    ```sh
+   ```sh
     GET http://localhost:5000/api/city/New+York?limit=20&offset=0
-    ```
+   ```
 
 **Response**:
-    ```json
+   ```json
     {
     "count": 20,
     "rows": [
@@ -126,7 +126,7 @@ Parameters:
         ...
     ]
     }
-    ```
+   ```
 #### 4. Error Handling
 The API will return the following error responses:
 
@@ -135,9 +135,9 @@ The API will return the following error responses:
 
 #### 5. Query Parameters
 The API supports pagination using `limit` and `offset` query parameters. For example:
-    ```sh
+   ```sh
     /api/state/CA?limit=10&offset=10
-    ```
+   ```
 ## Contributing
 We welcome contributions! Please follow the steps below:
 
