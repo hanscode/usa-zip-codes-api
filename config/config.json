@@ -1,0 +1,14 @@
+{
+  "development": {
+    "dialect": "sqlite",
+    "storage": "us-zip-codes.db"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": "us-zip-codes.db"
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "us-zip-codes.db"
+  }
+}
